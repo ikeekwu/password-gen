@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="bg-primary">
+<div class="container my-4">
+<div class="card text-center">
+    <div class="card-header">
+        Password Generator
+    </div>
+    <div class="card-body p-5" >
+        <output class="text-danger" id="password" type="text">
+    </div>
+    <div class="card-footer text-muted">
+        <button class="btn btn-outline-danger" id="generate">Generate</button>
+        <button class="btn btn-outline-success" id="btnCopy">Copy to Clipboard</button>
+    </div>
+</div>
+</div>
+<script src="passGen.js" type="text/javascript"></script>
+</body>
+<script>
+    document.getElementById("btnCopy").addEventListener("click", copy);
+
+    function copy() {
+    /* Get the text field */
+    var copyText = document.getElementById("password");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+    /* Copy the text inside the text field */
+    document.execCommand("Copy");
+
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
+    }
+</script>
+</html>
