@@ -1,6 +1,6 @@
 function genPassword(){
     let numLimit = prompt("How many characters would you like in your password?");
-
+    // Set limits for amount of charaters
     if(numLimit < 8){
 
         alert("Not enough characters!")
