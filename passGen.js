@@ -20,7 +20,7 @@ function genPassword(){
     let lowerCase = confirm("Would you like lowercase characters?")
     let upperCase = confirm("Would you like uppercase characters?")
 
-    // Define variables for characters
+    // Define variables for characters!
     let specialChar = "!#$ % & '()*+,-./:;<=>?@[]^_`{|}~"
     let lowerChar = "abcdefghijklmnopqrstuvwxyz"
     let upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
