@@ -14,7 +14,7 @@ function genPassword(){
         return
     };
 
-    // Set variables for confirm response
+    // Set variables for confirm response!
     let specialCase = confirm("Would you like special characters?")
     let numCase = confirm("Would you like numbers?")
     let lowerCase = confirm("Would you like lowercase characters?")
