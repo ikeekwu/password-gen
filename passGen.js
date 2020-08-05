@@ -45,7 +45,7 @@ function genPassword(){
 
     let newPassword = ""
 
-    // For loop to randomly select characters
+    // For loop to randomly select characters!
     for(let i = 0; i < numLimit; i++){
     
     let randomiNDEX = Math.floor(Math.random() * password.length)
