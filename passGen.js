@@ -28,7 +28,7 @@ function genPassword(){
     
     let password = ""
 
-    // Conditional for which characters to bring in
+    // Conditional for which characters to bring in to password
 
     if(lowerCase === true) {
         password += lowerChar
